@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.4.0">
+		<Header>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+			<Title>it</Title>
+			<Author>Jonas Stawski (@jstawski)</Author>
+			<Description>Code snippet for a Jasmine unit test</Description>
+			<Shortcut>it</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Edtable="true">
+					<ID>description</ID>
+					<ToolTip>Unit Test Description</ToolTip>
+					<Default>Should do something when...</Default>
+					<Function></Function>
+				</Literal>
+				<Literal Edtable="true">
+					<ID>arrange</ID>
+					<ToolTip>Arrange your unit test</ToolTip>
+					<Default>//var something = new Something();</Default>
+					<Function></Function>
+				</Literal>
+				<Literal Edtable="true">
+					<ID>act</ID>
+					<ToolTip>Act on your arrangement</ToolTip>
+					<Default>//var x = something.Foo();</Default>
+					<Function></Function>
+				</Literal>
+				<Literal Edtable="true">
+					<ID>assert</ID>
+					<ToolTip>Assert something</ToolTip>
+					<Default>//expect(x).toEqual(0);</Default>
+					<Function></Function>
+				</Literal>
+			</Declarations>
+			<Code Language="javascript"><![CDATA[it("$description$", function() { 
+				// Arrange
+				$arrange$
+				// Act
+				$act$
+				// Assert
+				$assert$
+			});$end$]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
